@@ -36,7 +36,12 @@ const isFavorite = (drinkId) => {
     <div v-if="categorie.drinks.length > 0" class="drink-category">
       {{ categorie.name }}
     </div> 
-    <div class="drink-grid">
+    <TransitionGroup 
+    name="staggered-fade"
+    tag="div"
+    class="drink-grid"
+    appear
+  >
       <div 
         class="drink-card" 
         v-for="(drink, index) in categorie.drinks" 
@@ -63,7 +68,7 @@ const isFavorite = (drinkId) => {
         </button>
       
       </div>
-    </div>
+    </TransitionGroup>
   </div>
 </template>
 
@@ -79,6 +84,24 @@ const isFavorite = (drinkId) => {
     outline: none;
   }
 }
+
+
+.staggered-fade-move,
+.staggered-fade-enter-active,
+.staggered-fade-leave-active {
+  transition: all 0.5s ease;
+}
+
+.staggered-fade-enter-from,
+.staggered-fade-leave-to {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.staggered-fade-enter-active {
+  transition-delay: var(--delay);
+}
+
 
 .drink-category {
   display: grid;
@@ -100,6 +123,7 @@ const isFavorite = (drinkId) => {
 }
 
 .drink-card {
+  transition: transform 0.3s, box-shadow 0.3s, opacity 0.5s ease var(--delay);
   border-radius: 10px;
   padding: 10px;
   
