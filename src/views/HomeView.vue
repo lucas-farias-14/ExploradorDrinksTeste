@@ -30,7 +30,12 @@ const handleCategoryChange = (category) => {
 </script>
 <template>
   <div class="container">
-   
+    <div class="header">
+      <div class="title-header">
+        <h1 class="title">Explorador de Drinks</h1>
+        <p>Escolha o seu favorito!</p>
+      </div>
+    </div>
     <SearchBar 
       :categories="allCategories"
       @search="searchDrinks" 
