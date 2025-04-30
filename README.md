@@ -1,67 +1,44 @@
-Explorador de Drinks
-Um aplicativo Vue.js para explorar receitas de bebidas, utilizando a API TheCocktailDB.
+# Explorador de Drinks
 
-Funcionalidades Principais
-Busca de drinks por nome
+Um catálogo completo de bebidas desenvolvido com Vue.js que utiliza a API TheCocktailDB para trazer receitas, ingredientes e instruções de preparo.
 
-Filtro alfabético (de A a Z)
+--- 
 
-Filtro por categorias (Coquetéis, Shots, etc.)
+## Funcionalidades
+- Pesquisa drink por nome
+- Filtro por letra  (A-Z)
+- Filtro por categoria
+- Favorito
+- Apresentação de Drink
 
-Sistema de favoritos
+## Tecnologias
+- Vue 3
+- Pinia
+- Axios
+- SCSS
+- Vite
 
-Design responsivo para mobile e desktop
+## 🚀 Começando
 
-Tecnologias Utilizadas
-Vue 3 (Composition API)
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/seu-usuario/explorador-drinks.git
+   cd explorador-drinks
+   ```
 
-Pinia para gerenciamento de estado
 
-Vue Router para navegação
+2. **Instale as dependências**
+   ```bash
+   npm install
+   ```
 
-Axios para requisições HTTP
 
-SCSS para estilização
+3. **Inicie o servidor de desenvolvimento**
+   ```bash
+   npm run dev
+   ```
 
-Como Executar o Projeto
-Clone o repositório:
-
-bash
-git clone https://github.com/seu-usuario/explorador-drinks.git
-Instale as dependências:
-
-bash
-npm install
-Inicie o servidor de desenvolvimento:
-
-bash
-npm run dev
-Acesse no navegador:
-
-http://localhost:5173
-Estrutura do Projeto
-src/
-├── assets/          # Arquivos estáticos e estilos globais
-├── components/      # Componentes reutilizáveis
-├── composables/     # Lógica compartilhada
-├── stores/          # Gerenciamento de estado com Pinia
-├── views/           # Páginas da aplicação
-├── App.vue          # Componente principal
-└── main.js          # Configuração inicial
-Próximas Melhorias Planejadas
-Página dedicada para drinks favoritos
-
-Filtro por ingredientes
-
-Implementação de modo escuro
-
-Melhorias na experiência do usuário
-
-Licença
-Este projeto está licenciado sob a licença MIT.
-
-Links Relacionados
-TheCocktailDB API: https://www.thecocktaildb.com/api.php
-
-Documentação Vue.js: https://vuejs.org/
-
+4. **Acesse pelo navegador**
+    ```bash
+    http://localhost:5173
+    ```
