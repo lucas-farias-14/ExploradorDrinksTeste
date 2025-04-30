@@ -22,7 +22,7 @@ Um catálogo completo de bebidas desenvolvido com Vue.js que utiliza a API TheCo
 
 1. **Clone o repositório**
    ```bash
-   git clone https://github.com/seu-usuario/explorador-drinks.git
+   git clone https://github.com/lucas-farias-14/ExploradorDrinksTeste
    cd explorador-drinks
    ```
 
