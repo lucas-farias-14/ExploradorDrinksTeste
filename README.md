@@ -18,7 +18,7 @@ Um catálogo completo de bebidas desenvolvido com Vue.js que utiliza a API TheCo
 - SCSS
 - Vite
 
-## 🚀 Começando
+## Começando
 
 1. **Clone o repositório**
    ```bash
