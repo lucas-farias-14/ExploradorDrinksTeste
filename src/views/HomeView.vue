@@ -39,8 +39,6 @@ const handleCategoryChange = (category) => {
     <DrinksGrid 
       :categories="filteredCategories" 
       :isLoading="isLoading" 
-      @drinkSelected="(drinkId) => $router.push({ name: 'drink', params: { id: drinkId } })"
-      
     />
   </div>
 </template>
