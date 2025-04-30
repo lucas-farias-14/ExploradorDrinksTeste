@@ -5,11 +5,15 @@
   const selectedCategory = ref('')
   const emit = defineEmits(['search', 'filterCategory'])
 
-  defineProps({
+  const props = defineProps({
     categories: {
       type: Array,
       default: () => []
     },
+    onSelectedCategory: {
+      type: Function,
+      default: () => {}
+    }
     
   })
 
