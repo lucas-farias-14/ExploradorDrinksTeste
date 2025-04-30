@@ -1,4 +1,4 @@
-// composables/useDrinks.js
+
 import { ref, computed, onMounted } from 'vue'
 import axios from 'axios'
 
@@ -69,7 +69,7 @@ export function useDrinks() {
 
   const filterByCategory = (category) => {
     categoryFilter.value = category
-    // Reset other filters when applying category filter
+   
     isLetterFilterActive.value = false
   }
 
